@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<div class="col1"></div>
+<div class="col2">
+    <h1> Contact Form</h1>
+<!--   action="https://bucs601.com/submit.php onsubmit="validateForm()"   -->
+    <form id="signup" action="https://bucs601.com/submit.php" onsubmit="return validateForm()" method="post" >
+    <!--    text area-->
+        <label for="firstName">First Name:</label>
+        <input class="text" type="text" id="firstName" name="firstName" pattern="[a-zA-z]+"
+               oninvalid="setCustomValidity('Please enter valid alphabets and the length is at least 2 ')" required minlength="2"><br>
+        <label for="lastName">Last Name:</label>
+        <input class="text" type="text" id="lastName" name="lastName" pattern="[a-zA-z]+"
+               oninvalid="setCustomValidity('Please enter valid alphabets and the length is at least 2 ')" required minlength="2"><br>
+        <label for="facilitator">Facilitator:</label>
+        <input class="text" type="text" id="facilitator" name="facilitator"  required
+               pattern="josh|fazil|christian" oninvalid="setCustomValidity('must be josh/fazil/christian')"><br>
+
+    <!--    radio button-->
+        <h3>Please select your favorite language:</h3>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="radio" id="java" name="fav_language" value="Java">
+        <label for="java">Java</label><br>
+        <input type="radio" id="c++" name="fav_language" value="C++">
+        <label for="c++">C++</label><br>
+        <input type="radio" id="python" name="fav_language" value="Python">
+        <label for="python">Python</label><br>
+        <div  class="reminder" id="reminder1"> </div>
+    <!--check box-->
+        <h3>Choose your grocery store</h3>
+        <input type="checkbox" id="star" name="market" value="Star">
+        <label for="star">Star</label><br>
+        <input type="checkbox" id="wholefoods" name="market" value="WholeFoods">
+        <label for="wholefoods"> Whole Foods</label><br>
+        <input type="checkbox" id="tradeJoe" name="market" value="TradeJoe">
+        <label for="tradeJoe"> Trade Joe</label><br>
+        <input type="checkbox" id="super88" name="market" value="Super88">
+        <label for="super88"> Super 88</label><br>
+        <input type="checkbox" id="stopshop" name="market" value="stopshop">
+        <label for="stopshop">Stopshop</label><br>
+        <div class="reminder" id="marketsss"></div>
+        <div class="reminder" id="box"> </div><br>
+        <button type="submit" id="btn">submit</button>
+    </form>
+    <small> </small>
+    </div>
+    <div class="col3"></div>
+</div>
+    <script src="index.js"></script>
+    <hr>
+    <footer>
+        CopyRight @ 2022 Xiaonan Liu
+    </footer>
+</body>
+</html>

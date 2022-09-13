@@ -1,0 +1,61 @@
+html{
+}
+body{
+    background-color: lightblue;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin: 5em  0 2em 0;
+    line-height: 1.6;
+}
+form{
+    background: white;
+    background-size: 800px;
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+h3{
+    text-decoration-line: underline;
+}
+#lastName{
+    margin-top: 2px;
+    margin-left: 1px;
+}
+#facilitator{
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.reminder{
+    height: 2em;
+    color: red;
+}
+.text{
+    padding: 10px;
+}
+button{
+    margin-top: 1em;
+}
+#btn {
+    padding: 10px 30px;
+    font-size: 24px;
+    cursor: pointer;
+
+    border-radius: 7px 7px 7px 0;
+
+    background-color: #ffacac;
+    color: #53488d;
+
+    transition: all 0.3s;
+}
+
+
+footer{
+    margin-top: 1em;
+    font-weight: lighter;
+    color: gray;
+    text-align: center;
+}

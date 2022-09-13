@@ -1,0 +1,25 @@
+{
+  "schools": [{
+    "name": "Boston University",
+    "major": "Software Engineering",
+    "type": "MS",
+    "year": "2024",
+    "course": [
+      "Web Application Development",
+      "Data Structure& Algorithm",
+      "Software Engineering"
+    ]
+  },
+    {
+      "name": "University of Massachusetts",
+      "major": "Information Technology",
+      "type": "BS",
+      "year": "2021",
+      "course": [
+        "Python programming",
+        "Java programming",
+        "Operation system"
+      ]
+    }
+  ]
+}
